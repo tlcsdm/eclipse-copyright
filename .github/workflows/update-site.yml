@@ -22,8 +22,7 @@ jobs:
 
       - name: Copy update site content to update_site/
         run: |
-          rm -rf update_site/*
-          cp -r $(find sites -type d -path 'sites/*/target/repository' | head -n 1)/* update_site/
+          cp -rf $(find sites -type d -path 'sites/*/target/repository' | head -n 1)/* update_site/
 
       - name: Configure git
         run: |
