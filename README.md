@@ -28,5 +28,5 @@ mvn clean org.eclipse.tycho:tycho-versions-plugin:set-version -DnewVersion=2.0.0
 
 Refer to the original Github pages at https://jmini.github.io/Eclipse-Copyright-Generator/.
 
-Bintray is no longer available. This project will release the artifacts in Github releases instead. E.g. add `jar:https://github.com/crmky/Eclipse-Copyright-Generator/releases/download/v2.0.0/com.wdev91.eclipse.copyright.site.eclipse-repository-2.0.0.zip!/` as the upgrade location in Eclipse.
+Bintray is no longer available. This project will release the artifacts in Github releases instead. E.g. add `https://raw.githubusercontent.com/tlcsdm/Eclipse-Copyright/master/update_site/` as the upgrade location in Eclipse.
 
