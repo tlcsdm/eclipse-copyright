@@ -23,7 +23,6 @@ jobs:
           BRANCH="update-site-update-$(date +%Y%m%d%H%M%S)"
           git checkout -b "$BRANCH"
           echo "branch_name=$BRANCH" >> $GITHUB_ENV
-          echo "::set-output name=branch_name::$BRANCH"
 
       - name: Build with Maven Tycho
         run: mvn clean verify
@@ -50,7 +49,7 @@ jobs:
         run: |
           git add -A update_site
           git commit -m "build: Update update_site with latest build artifacts"
-          git push --set-upstream origin $BRANCH
+         # git push --set-upstream origin $BRANCH
 
       - name: Create Pull Request
         if: steps.changes.outputs.changed != '0'
