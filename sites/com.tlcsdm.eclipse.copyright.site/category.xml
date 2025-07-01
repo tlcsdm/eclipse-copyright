@@ -3,5 +3,9 @@
    <feature url="features/com.tlcsdm.eclipse.copyright.feature_1.0.0.jar" id="com.tlcsdm.eclipse.copyright.feature" version="1.0.0">
       <category name="com.tlcsdm.eclipse"/>
    </feature>
-   <category-def name="com.tlcsdm.eclipse" label="com.tlcsdm.eclipse"/>
+   <category-def name="com.tlcsdm.eclipse" label="com.tlcsdm.eclipse">
+      <description>
+         Tlcsdm Eclpise Plugins
+      </description>
+   </category-def>
 </site>
