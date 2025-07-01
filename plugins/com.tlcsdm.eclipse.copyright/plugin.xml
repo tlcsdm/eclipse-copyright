@@ -10,7 +10,7 @@
             visible="true">
          <action
                class="com.tlcsdm.eclipse.copyright.actions.ApplyCopyrightAction"
-               icon="icons/copyright.gif"
+               icon="icons/copyright16.png"
                id="com.tlcsdm.eclipse.copyright.ApplyCopyrightAction"
                label="%actionApply_label"
                menubarPath="project/additions"
