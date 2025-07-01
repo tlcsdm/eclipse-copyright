@@ -3,7 +3,8 @@
       id="com.tlcsdm.eclipse.copyright.feature"
       label="%featureName"
       version="1.0.0"
-      provider-name="%providerName">
+      provider-name="%providerName"
+      plugin="com.tlcsdm.eclipse.copyright">
 
    <description>
       This plug-in adds a wizard allowing to apply a copyright header comment to a selection of files in projects. The same text can be applyied on different types of files (java, xml...), the comment format being adapted in function of the content type.
@@ -43,7 +44,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
    </license>
 
    <url>
-      <update label="%updateSiteName" url="http://www.tlcsdm.com/update/"/>
+      <update label="%updateSiteName" url="https://raw.githubusercontent.com/tlcsdm/Eclipse-Copyright/master/update_site/"/>
    </url>
 
    <requires>
