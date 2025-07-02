@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<compositeRepository xmlns="http://www.eclipse.org/pp2/composite"
+  name="Composite Site"
+  type="org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository"
+  version="1.0.0">
+  <children size="2">
+    <child location="1.0.0"/>
+    <child location="1.0.1"/>
+  </children>
+  <properties size="1">
+    <property name="p2.timestamp" value="1720000000000"/>
+  </properties>
+</compositeRepository>
