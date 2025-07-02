@@ -76,6 +76,7 @@
             locationURI="popup:org.eclipse.ui.popup.any?after=additions">
          <command
                commandId="com.tlcsdm.eclipse.copyright.ApplyCopyrightCommand"
+               icon="icons/copyright16.png"
                style="push">
             <visibleWhen
                   checkEnabled="false">
