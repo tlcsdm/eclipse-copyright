@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/com.tlcsdm.eclipse.copyright.feature_1.0.1.jar" id="com.tlcsdm.eclipse.copyright.feature" version="1.0.1">
+   <feature id="com.tlcsdm.eclipse.copyright.feature" version="0.0.0">
       <category name="com.tlcsdm.eclipse"/>
    </feature>
    <category-def name="com.tlcsdm.eclipse" label="com.tlcsdm.eclipse">
