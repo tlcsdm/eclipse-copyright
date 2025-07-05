@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?NLS TYPE="org.eclipse.help.toc"?>
-<toc label="Eclipse-Copyright" topic="help/prefs_copyright.html">
+<toc label="Eclipse Copyright">
 	<topic label="Preferences - Copyright" href="help/prefs_copyright.html"></topic>
 	<topic label="Preferences - Headers formats" href="help/prefs_formats.html"></topic>
 	<topic label="Project copyright properties" href="help/prefs_project.html"></topic>
