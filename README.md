@@ -6,7 +6,7 @@ This is an Eclipse extension to help generating and updating copyright in files.
 
 Fork of [Eclipse Copyright Generator project](https://github.com/jmini/Eclipse-Copyright-Generator) on Github, which is a fork of the [Eclipse Copyright Generator project](http://sourceforge.net/projects/eclipsecopyrigh/) on sourceforge.
 
-Initial work by Eric Wuillai. Contributors: Jeremie Bresson, Matthew Krupcale, Roger Chen.
+Initial work by Eric Wuillai. Contributors: Jeremie Bresson, Matthew Krupcale, Roger Chen, unknowIfGuestInDream.
 
 ## Build
 
