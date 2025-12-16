@@ -2,6 +2,8 @@
 
 This is an Eclipse extension to help generating and updating copyright in files.
 
+Now Support Eclipse 2024-06 and later, Mac OS X, Linux (with nautilus) and Windows.
+
 ## Use
 Click Project -> Apply copyright...  
 
