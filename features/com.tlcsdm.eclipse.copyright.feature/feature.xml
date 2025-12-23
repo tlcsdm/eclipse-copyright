@@ -44,8 +44,8 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
    </license>
 
    <url>
-      <update label="%updateSiteName" url="https://raw.githubusercontent.com/tlcsdm/eclipse-copyright/master/update_site/"/>
-      <discovery label="Eclipse Copyright Update Site" url="https://raw.githubusercontent.com/tlcsdm/eclipse-copyright/master/update_site/"/>
+      <update label="%updateSiteName" url="https://raw.githubusercontent.com/tlcsdm/eclipse-copyright/update_site/"/>
+      <discovery label="Eclipse Copyright Update Site" url="https://raw.githubusercontent.com/tlcsdm/eclipse-copyright/update_site/"/>
    </url>
 
    <requires>

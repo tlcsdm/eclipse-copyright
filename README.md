@@ -33,6 +33,6 @@ mvn clean org.eclipse.tycho:tycho-versions-plugin:set-version -DnewVersion=2.0.0
 
 Refer to the original Github pages at [https://docs.tlcsdm.com/eclipse-copyright/.](https://docs.tlcsdm.com/eclipse-copyright/)
 
-1. Add `https://raw.githubusercontent.com/tlcsdm/eclipse-copyright/master/update_site/` as the upgrade location in Eclipse.
+1. Add `https://raw.githubusercontent.com/tlcsdm/eclipse-copyright/update_site/` as the upgrade location in Eclipse.
 2. Download from [Jenkins](https://jenkins.tlcsdm.com/job/eclipse-plugin/job/eclipse-copyright)
 
