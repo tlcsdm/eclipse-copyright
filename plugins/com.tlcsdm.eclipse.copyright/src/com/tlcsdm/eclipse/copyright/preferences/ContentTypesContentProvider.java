@@ -39,7 +39,7 @@ public class ContentTypesContentProvider implements ITreeContentProvider {
    * @see org.eclipse.jface.viewers.ITreeContentProvider#getChildren(java.lang.Object)
    */
   public Object[] getChildren(Object parentElement) {
-    List<IContentType> elements = new ArrayList<IContentType>();
+    List<IContentType> elements = new ArrayList<>();
     IContentType baseType = (IContentType) parentElement;
     IContentType[] contentTypes = manager.getAllContentTypes();
     for (int i = 0; i < contentTypes.length; i++) {

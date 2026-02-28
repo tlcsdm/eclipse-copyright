@@ -116,7 +116,7 @@ public class ResourcesSelectionPage extends WizardPage {
   }
 
   public void getSelection(CopyrightSettings settings) {
-    ArrayList<IFile> selection = new ArrayList<IFile>();
+    ArrayList<IFile> selection = new ArrayList<>();
     for (Object o : viewer.getCheckedElements()) {
       CopyrightSelectionItem item = (CopyrightSelectionItem) o;
       if ( item.getResource() instanceof IFile ) {
