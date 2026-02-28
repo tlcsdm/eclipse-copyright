@@ -51,7 +51,7 @@ public class ProjectPreferences {
   }
 
   public void setFormats(Collection<HeaderFormat> formats) {
-    this.formats = new HashMap<String, HeaderFormat>(formats.size());
+    this.formats = new HashMap<>(formats.size());
     for (HeaderFormat f : formats) {
       this.formats.put(f.getContentId(), f);
     }

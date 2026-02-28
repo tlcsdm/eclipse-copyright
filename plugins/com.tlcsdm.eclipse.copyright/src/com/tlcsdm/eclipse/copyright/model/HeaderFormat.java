@@ -10,6 +10,7 @@
  ******************************************************************************/
 package com.tlcsdm.eclipse.copyright.model;
 
+import java.util.Objects;
 import java.util.regex.Pattern;
 
 import org.eclipse.core.runtime.content.IContentTypeManager;
@@ -130,9 +131,15 @@ public class HeaderFormat {
 
   @Override
   public boolean equals(Object obj) {
+    if ( this == obj ) return true;
     return (obj instanceof HeaderFormat)
     		? ((HeaderFormat) obj).getContentId().equals(this.contentId)
     				: false;
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hashCode(contentId);
   }
 
   public boolean isExcluded() {

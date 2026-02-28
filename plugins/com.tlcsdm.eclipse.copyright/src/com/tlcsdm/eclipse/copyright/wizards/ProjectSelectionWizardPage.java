@@ -71,7 +71,7 @@ public class ProjectSelectionWizardPage extends WizardPage {
         if ( ! (element instanceof IWorkspace) ) {
           return new Object[0];
         }
-        List<IProject> projects = new ArrayList<IProject>();
+        List<IProject> projects = new ArrayList<>();
         for (IProject project : ((IWorkspace) element).getRoot().getProjects()) {
           if ( project.isOpen() && ( projectsFilter == null || projectsFilter.contains(project) ) ) {
             projects.add(project);

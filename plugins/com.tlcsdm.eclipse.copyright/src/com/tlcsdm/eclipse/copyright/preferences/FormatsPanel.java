@@ -60,7 +60,7 @@ public class FormatsPanel extends Composite {
   private Text firstLinePatternText;
   private Button clearButton;
 
-  private Map<String, HeaderFormat> headerFormats = new HashMap<String, HeaderFormat>();
+  private Map<String, HeaderFormat> headerFormats = new HashMap<>();
   private String currentId = null;
 
   public FormatsPanel(Composite parent, int style) {

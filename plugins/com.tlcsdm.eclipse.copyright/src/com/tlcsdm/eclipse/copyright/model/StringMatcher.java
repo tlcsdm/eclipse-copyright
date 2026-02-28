@@ -136,10 +136,10 @@ public class StringMatcher {
       }
     }
 
-    ArrayList<String> temp = new ArrayList<String>();
+    ArrayList<String> temp = new ArrayList<>();
 
     int pos = 0;
-    StringBuffer buf = new StringBuffer();
+    StringBuilder buf = new StringBuilder();
     while (pos < patternLength) {
       char c = pattern.charAt(pos++);
       switch (c) {

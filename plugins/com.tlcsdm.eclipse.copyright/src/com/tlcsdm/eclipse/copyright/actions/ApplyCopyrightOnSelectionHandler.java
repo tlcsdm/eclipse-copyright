@@ -22,7 +22,11 @@ import org.eclipse.core.resources.IFolder;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IResource;
 import org.eclipse.core.runtime.CoreException;
+import org.eclipse.core.runtime.ILog;
 import org.eclipse.core.runtime.IAdaptable;
+import org.eclipse.core.runtime.IStatus;
+import org.eclipse.core.runtime.Platform;
+import org.eclipse.core.runtime.Status;
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.jface.viewers.IStructuredSelection;
 import org.eclipse.osgi.util.NLS;
@@ -30,6 +34,7 @@ import org.eclipse.swt.widgets.Shell;
 import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.handlers.HandlerUtil;
 
+import com.tlcsdm.eclipse.copyright.Activator;
 import com.tlcsdm.eclipse.copyright.Messages;
 import com.tlcsdm.eclipse.copyright.model.CopyrightManager;
 import com.tlcsdm.eclipse.copyright.model.CopyrightSettings;
@@ -43,6 +48,7 @@ import com.tlcsdm.eclipse.copyright.wizards.ApplyCopyrightWizard;
  */
 public class ApplyCopyrightOnSelectionHandler extends AbstractHandler {
   public static final String COMMAND_ID = "com.tlcsdm.eclipse.copyright.ApplyCopyrightCommand"; //$NON-NLS-1$
+  private static final ILog log = Platform.getLog(ApplyCopyrightOnSelectionHandler.class);
 
   private void addFile(IResource res, List<IFile> resources) {
     if ( res instanceof IFile ) {
@@ -54,13 +60,15 @@ public class ApplyCopyrightOnSelectionHandler extends AbstractHandler {
         for (IResource member : ((IFolder) res).members(IFolder.EXCLUDE_DERIVED)) {
           addFile(member, resources);
         }
-      } catch (CoreException e) {}
+      } catch (CoreException e) {
+        log.log(new Status(IStatus.WARNING, Activator.PLUGIN_ID, "Failed to list folder members", e));
+      }
     }
   }
 
   public Object execute(ExecutionEvent event) throws ExecutionException {
     // Creates list of selected files
-    List<IFile> resources = new ArrayList<IFile>();
+    List<IFile> resources = new ArrayList<>();
     IStructuredSelection selection = (IStructuredSelection) HandlerUtil.getActiveMenuSelection(event);
     for (Object sel : selection.toArray()) {
       if ( sel instanceof IFile || sel instanceof IFolder ) {
@@ -83,7 +91,7 @@ public class ApplyCopyrightOnSelectionHandler extends AbstractHandler {
     }
 
     // List of projects containing the selected files, with analyze if wizard is needed
-    List<IProject> projects = new ArrayList<IProject>();
+    List<IProject> projects = new ArrayList<>();
     boolean wizard = false;
     for (IFile f : resources) {
       IProject p = f.getProject();

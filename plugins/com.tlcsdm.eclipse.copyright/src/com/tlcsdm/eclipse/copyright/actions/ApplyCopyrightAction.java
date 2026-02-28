@@ -81,7 +81,7 @@ public class ApplyCopyrightAction extends AbstractHandler implements IWorkbenchW
 	}
 
 	protected IProject[] getSelectedProjects() {
-		ArrayList<IProject> projects = new ArrayList<IProject>();
+		ArrayList<IProject> projects = new ArrayList<>();
 
 		for (Object obj : getSelection().toArray()) {
 			if (obj instanceof IResource) {
