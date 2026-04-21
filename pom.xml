@@ -10,6 +10,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <target.platform.file>target-platform.target</target.platform.file>
+        <target.resolve.with.ee.constraints>true</target.resolve.with.ee.constraints>
     </properties>
 
     <modules>
@@ -40,8 +42,9 @@
                 <artifactId>target-platform-configuration</artifactId>
                 <version>${tycho.version}</version>
                 <configuration>
+                    <resolveWithExecutionEnvironmentConstraints>${target.resolve.with.ee.constraints}</resolveWithExecutionEnvironmentConstraints>
                     <target>
-                        <file>../../target-platform.target</file>
+                        <file>../../${target.platform.file}</file>
                     </target>
                 </configuration>
             </plugin>
